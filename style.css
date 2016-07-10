@@ -1,0 +1,94 @@
+/* general css */
+@font-face {
+    font-family: HelveticaLogo; /* Гарнитура шрифта */
+    src: url(fonts/HelveticaLogo.otf); /* Путь к файлу со шрифтом */
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: url("images/background.jpg") repeat;
+    font-family: "Verdana";
+    font-size:12px;
+}
+
+.wrapper{
+    /*min-width:858px;*/
+    width:858px;
+    margin:37px 175px 0 175px;
+    position:relative;
+}
+
+/* header */
+
+body>header{
+    overflow: hidden;
+}
+
+body>header>figure{
+    margin:0;
+    width:161px;
+    float:left;
+}
+
+body>header>figure>div>a{
+    font-family: "HelveticaLogo";
+    font-size:31px;
+    color:#aaaaaa;
+    text-decoration: none;
+}
+
+body>header>figure>div>a>span{
+    color:#1fbdff;
+}
+
+body>header>figure>figcaption{
+    color:#aaaaaa; /*  #b4b4b4;*/
+    font-family: Verdana;
+    font-size: 11px;
+    margin-left: 57px;
+    margin-top: -3px
+}
+
+body>header>nav{
+    float:right;
+    margin-top:6px;
+}
+
+body>header>nav>ul>li>a{
+    text-decoration: none;
+    list-style: none;
+    color:#b3b3b3;
+}
+
+body>header>nav>ul>li {
+    margin-right:8px;
+    padding: 10px 15px 8px 15px;
+    display: inline;
+}
+
+body>header>nav>ul>li:hover{
+    background: #0eb8ff;
+    background: linear-gradient(to top, #0eb8ff, #0f8bbe);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+body>header>nav>ul>li:hover a{
+    color:#FFFFFF;
+}
+
+body>header>nav>ul>li:last-child{
+    margin-right:0px;
+}
+
+/*main*/
+main{
+    padding:18px;
+}
+
+/*footer*/
+body>footer{
+
+}
