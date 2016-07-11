@@ -126,6 +126,30 @@ main>section>div.slider>ul>li{
     height:100%;
 }
 
+main>section>div.slider.infinity > input:last-of-type:checked ~ .arrows label:first-of-type, main>section>div.slider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(2), main>section>div.slider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(3), main>section>div.slider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(4), main>section>div.slider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(5), main>section>div.slider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(6), main>section>div.slider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(7), main>section>div.slider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(8), main>section>div.slider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(9), main>section>div.slider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(10), main>section>div.slider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(11), main>section>div.slider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(12){
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+main>section>div.slider.infinity > input:first-of-type:checked ~ .arrows label:last-of-type, main>section>div.slider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(0), main>section>div.slider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(1), main>section>div.slider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(2), main>section>div.slider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(3), main>section>div.slider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(4), main>section>div.slider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(5), main>section>div.slider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(6), main>section>div.slider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(7), main>section>div.slider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(8), main>section>div.slider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(9), main>section>div.slider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(10){
+    transform:initial;
+    -webkit-transform: initial;
+}
+
+main>section>div.slider > .arrows label,.slider > .arrows label:hover {
+    width:36px;
+    height:36px;
+    padding:0;
+    background: url("images/arrow.png") no-repeat;
+    box-shadow: none;
+}
+main>section>div.slider>.arrows{
+    left: 17px;
+    top: 131px;
+    width: 756px;
+    height: 26px;
+    z-index: 2;
+}
+
 /*footer*/
 body>footer{
 
