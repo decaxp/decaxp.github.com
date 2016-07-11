@@ -14,8 +14,8 @@ body{
 
 .wrapper{
     /*min-width:858px;*/
-    width:858px;
-    margin:37px 175px 0 175px;
+    width:870px;
+    margin:37px 175px 42px 174px;
     position:relative;
 }
 
@@ -23,6 +23,7 @@ body{
 
 body>header{
     overflow: hidden;
+    padding-left: 2px;
 }
 
 body>header>figure{
@@ -40,13 +41,14 @@ body>header>figure>div>a{
 
 body>header>figure>div>a>span{
     color:#1fbdff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 body>header>figure>figcaption{
     color:#aaaaaa; /*  #b4b4b4;*/
     font-family: Verdana;
     font-size: 11px;
-    margin-left: 57px;
+    margin-left: 60px;
     margin-top: -3px
 }
 
@@ -62,7 +64,7 @@ body>header>nav>ul>li>a{
 }
 
 body>header>nav>ul>li {
-    margin-right:8px;
+    margin-right:9px;
     padding: 10px 15px 8px 15px;
     display: inline;
 }
@@ -80,12 +82,46 @@ body>header>nav>ul>li:hover a{
 }
 
 body>header>nav>ul>li:last-child{
-    margin-right:0px;
+    margin-right: 0px;
 }
 
 /*main*/
 main{
-    padding:18px;
+    padding: 16px 14px 16px 14px;
+    background: rgba(75,75,75,0.5);
+    border: 1px solid #626262;
+    width: 821px !important;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+main>section{
+    background:#FFFFFF;
+    padding:15px 5px 15px 5px;
+    border:1px solid #434343;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+/*slider*/
+main>section>div.slider{
+    border:1px solid #e4e4e4;
+    background: #FFFFFF;
+    width:791px;
+    margin:0 auto;
+
+}
+
+main>section>div.slider>ul{
+    margin:6px 5px;
+}
+main>section>div.slider>ul>li{
+    height:191px;
+    background: linear-gradient(to top, #0eb6fd, #0f8dc2);;
+}
+
+#mosaic{
+    background: url("images/mosaic.png") repeat;
+    opacity: 0.25;
+    height:100%;
 }
 
 /*footer*/
