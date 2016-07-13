@@ -101,10 +101,17 @@ main{
 }
 
 main>section{
-    background:#FFFFFF;
+    background:linear-gradient(to top,#ececec,#FFFFFF);
     padding:15px 5px 15px 5px;
     border:1px solid #434343;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+
+.mainTitle{
+    font-size:24px;
+    color:#0b81be;
 }
 
 /*slider*/
@@ -190,6 +197,106 @@ main>section>div.slider>ul>li>div>div:last-child{
 .sliderText{
     font-size:12px;
     line-height: 17px
+}
+
+/*aside, article*/
+#sidebar{
+    width:278px;
+    padding: 19px 0 20px 8px;
+}
+article,#sidebar{
+    float:left;
+    overflow: hidden;
+    color: #858585 ;
+}
+
+article{
+    padding: 20px 0 15px 22px;
+    width: 500px;
+}
+
+aside{
+    border-right: 1px solid #e4e4e4;
+}
+aside>p,article>p{
+    line-height: 18px;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+article>p{
+    margin-bottom: 18px;
+}
+article>p>i{
+    color:#000000;
+}
+aside>ul{
+    padding: 3px 0 0 10px;
+}
+aside>ul>li{
+    list-style: none;
+    padding: 7px 0 8px 0;
+    font-style:italic;
+}
+
+aside>ul>li>span{
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 7px;
+}
+
+aside>ul>li:first-child{
+    padding-top: 0;
+}
+aside>ul>li:last-child{
+    border:none;
+    padding-bottom:0;
+}
+
+aside>ul>li:before{
+    /* content: " "; */
+    box-shadow: inset 2px -2px 0 0px #2c91c6;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    content: '';
+    width: 6px;
+    margin-right: 10px;
+    height: 6px;
+    display: inline-block;
+}
+
+/*mainBLock*/
+#mainBlock{
+    border: 1px solid #e4e4e4;
+    background: linear-gradient(to top, #f5f5f5,#FFFFFF);
+    width:791px;
+    height:110px;
+    overflow: hidden;
+    margin: 0 8px 0 8px;
+    color: #858585 ;
+}
+
+#mainBlock>.fleft{
+    width:50%;
+    padding:15px 0;
+    overflow: hidden;
+}
+
+#mainBlock.fleft:first-child{
+    border:1px solid #e4e4e4;
+}
+#mainBlock>.fleft>img,#mainBlock>.fleft>span{
+    float:left;
+}
+
+#mainBlock>.fleft>img{
+    margin:17px 0 0 17px;
+}
+
+#mainBlock>.fleft>span{
+    width: 305px;
+    margin: 12px 0 0 19px;
+    line-height: 17px;
 }
 /*footer*/
 body>footer{
