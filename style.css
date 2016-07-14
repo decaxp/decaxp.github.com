@@ -24,6 +24,10 @@ body{
     float:left;
 }
 
+.clear{
+    clear:both;
+}
+
 /* header */
 
 body>header{
@@ -31,25 +35,28 @@ body>header{
     padding-left: 2px;
 }
 
+figure{
+    width: 161px;
+}
+
 body>header>figure{
     margin:0;
-    width:161px;
     float:left;
 }
 
-body>header>figure>div>a{
+figure>div>a{
     font-family: "HelveticaLogo";
     font-size:31px;
     color:#aaaaaa;
     text-decoration: none;
 }
 
-body>header>figure>div>a>span{
+figure>div>a>span{
     color:#1fbdff;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-body>header>figure>figcaption{
+figure>figcaption{
     color:#aaaaaa; /*  #b4b4b4;*/
     font-family: Verdana;
     font-size: 11px;
@@ -57,24 +64,26 @@ body>header>figure>figcaption{
     margin-top: -3px
 }
 
-body>header>nav{
+
+/*nav for header and footer*/
+nav{
     float:right;
     margin-top:5px;
 }
 
-body>header>nav>ul>li>a{
+nav>ul>li>a{
     text-decoration: none;
     list-style: none;
     color:#b3b3b3;
 }
 
-body>header>nav>ul>li {
+nav>ul>li {
     margin-right:9px;
     padding: 10px 15px 8px 15px;
     display: inline;
 }
 
-body>header>nav>ul>li:hover{
+nav>ul>li:hover{
     background: #0eb8ff;
     background: linear-gradient(to top, #0eb8ff, #0f8bbe);
     border-radius: 20px;
@@ -82,14 +91,24 @@ body>header>nav>ul>li:hover{
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-body>header>nav>ul>li:hover a{
+nav>ul>li:hover a{
     color:#FFFFFF;
 }
 
-body>header>nav>ul>li:last-child{
+nav>ul>li:last-child{
     margin-right: 8px;
 }
 
+footer nav>ul>li:last-child {
+    margin-right: 4px;
+}
+
+footer nav>ul>li {
+    padding: 10px 12px 8px 12px;
+}
+footer nav>ul{
+    font-size: 11px;
+}
 /*main*/
 main{
     padding: 16px 14px 16px 14px;
@@ -269,8 +288,8 @@ aside>ul>li:before{
 #mainBlock{
     border: 1px solid #e4e4e4;
     background: #FFFFFF;
-    width:786px;
-    height:100px;
+    width:783px;
+    height:104px;
     overflow: hidden;
     margin: 0 8px 0 8px;
     color: #858585 ;
@@ -281,7 +300,7 @@ aside>ul>li:before{
     width:50%;
     padding:15px 0;
     overflow: hidden;
-    width: 385px;
+    width: 384px;
     height: 70px;
     background: linear-gradient(to top, #f5f5f5,#FFFFFF);
     margin: 0 2px 2px 0;
@@ -313,5 +332,62 @@ body>footer{
     height: 236px;
     border:1px solid #000000;
     background: rgba(0,0,0,0.4);
+    /*padding:30px 0 0 0;*/
+    color:#727272;
+    box-shadow: inset 1px 1px 1px rgba(74,74,74,1);
+    margin-top: 51px;
+    position: relative;
+    margin-bottom: 0;
+}
 
+body>footer>.wrapper{
+    overflow:hidden;
+    margin-top: 32px;
+    height: 175px;
+    margin-bottom: 0;
+}
+
+body>footer>.wrapper>.fleft>div{
+    margin-left:14px;
+}
+
+body>footer>.wrapper>.fleft>.mainTitle{
+    margin-top: 5px;
+    font-size:22px;
+}
+body>footer>.wrapper>.fleft>.mainTitle{
+    color:#FFFFFF;
+}
+
+#bubble{
+    background: url("images/bubble.png");
+    width: 266px;
+    height: 127px;
+    position: absolute;
+    top: 43px;
+    left: 38px;
+    color:#858585;
+}
+#bubble>div{
+    margin: 37px 6px 0 19px;
+    line-height: 17px;
+
+}
+
+#bubble>#time{
+    font-size:10px;
+    color:#0b81be;
+    margin-top: 20px;
+    font-style:italic;
+}
+#copyright{
+    float:right;
+    font-size: 11px;
+    color:#FFFFFF;
+    margin: 51px 17px 0 0;
+}
+
+footer figure{
+    float:right;
+    margin: 18px 17px 0 0px;
 }
