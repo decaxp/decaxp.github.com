@@ -1,2 +1,7 @@
 #php storm project files
 .idea
+#css making files
+#.css/style.css,css\style.css.map,css\style.min.css
+css/style.css
+css/style.css.map
+css/style.min.css
