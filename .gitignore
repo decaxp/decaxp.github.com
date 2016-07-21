@@ -2,6 +2,6 @@
 .idea
 #css making files
 #.css/style.css,css\style.css.map,css\style.min.css
-css/style.css
-css/style.css.map
-css/style.min.css
+#software-dark/css/style.css
+software-dark/css/style.css.map
+software-dark/css/style.min.css
