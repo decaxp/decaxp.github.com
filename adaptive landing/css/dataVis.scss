@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@keyframes grow-width {
+  from {
+    width: 0;
+  }
+}
+
+
+.dataVis1 {
+  list-style-type: none;
+  padding: 0;
+  width: 508px;
+  padding-left: 78px;
+  margin-right: 68px;
+  float:left;
+  li {
+    position: relative;
+    height: 50px;
+    margin-bottom: 36px;
+    div{
+      text-transform: uppercase;
+      position: absolute;
+    }
+    em, span {
+      display: block;
+      border-bottom: 30px solid #ffffff;
+      padding-bottom: 5px;
+    }
+    em {
+      font-style: normal;
+      border-bottom-color: #2ab99b;
+      position: absolute;
+      top: 16px;
+      overflow: visible;
+      animation: grow-width 3s;
+      animation-play-state: paused;
+//      margin-top: 16px;
+    }
+    span {
+      text-align:right;
+
+    }
+    span:after{
+      content:'%';
+      display:inline-block;
+    }
+  }
+}

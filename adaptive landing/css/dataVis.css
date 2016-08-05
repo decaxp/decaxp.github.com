@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@keyframes grow-width {
+  from {
+    width: 0; } }
+.dataVis1 {
+  list-style-type: none;
+  padding: 0;
+  width: 508px;
+  padding-left: 78px;
+  margin-right: 68px;
+  float: left; }
+  .dataVis1 li {
+    position: relative;
+    height: 50px;
+    margin-bottom: 36px; }
+    .dataVis1 li div {
+      text-transform: uppercase;
+      position: absolute; }
+    .dataVis1 li em, .dataVis1 li span {
+      display: block;
+      border-bottom: 30px solid #ffffff;
+      padding-bottom: 5px; }
+    .dataVis1 li em {
+      font-style: normal;
+      border-bottom-color: #2ab99b;
+      position: absolute;
+      top: 16px;
+      overflow: visible;
+      animation: grow-width 3s;
+      animation-play-state: paused; }
+    .dataVis1 li span {
+      text-align: right; }
+    .dataVis1 li span:after {
+      content: '%';
+      display: inline-block; }
+
+/*# sourceMappingURL=dataVis.css.map */

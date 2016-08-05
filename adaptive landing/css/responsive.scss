@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width:993px) and (max-width:1270px){
+/* pc and horizontal layout planshets */
+
+  .container{
+    width:970px;
+  }
+
+  .header-list-item:first-child,.header-list-item:nth-child(2){
+    margin-right:34px;
+  }
+
+  .header-list-item:nth-child(3){
+    margin-right:19px;
+  }
+  .header-list-item:last-child{
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+/* planshets */
+  .container{
+    width:750px;
+  }
+
+  .header-list-item:first-child,.header-list-item:nth-child(2){
+    margin-right:15px;
+  }
+
+  .header-list-item:nth-child(3){
+    margin-right:5px;
+  }
+  .header-list-item:last-child{
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:768px){
+/*horizontal phones*/
+}
+
+@media screen and (min-width:320px) and (max-width:479px){
+/* vertical phones */
+}
