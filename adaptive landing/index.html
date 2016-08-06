@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="css/dataVis.css"/>
+
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/dataVis.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+
+    <link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
 </head>
 <body>
 <header>
@@ -215,6 +222,60 @@
         </div>
     </div>
 
+    <div class="ceo">
+        <div class="container">
+            <!--<div class="city">-->
+                <!--<div class="ceo-city-video">-->
+                    <!--<div class="ceo-city-text">Trending ideas and inventions always make us feel proud</div>-->
+                    <!--<a href="#" class="ceo-city-btn">-->
+                        <!--<i class="ceo-city-icon"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="city">
+                <div class="city-container">
+                    <div class="ceo-city-video" isShow="1">
+                        <div class="ceo-city-text">Trending ideas and inventions always make us feel proud</div>
+                        <button class="ceo-city-btn">
+                            <i class="ceo-city-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <video id="my-video" class="video-js ceo-video-js" controls preload="auto" width="1250" height="504"
+                       poster="images/city.png" data-setup="{}">
+                    <source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.mp4" type='video/mp4'>
+                    <source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.webm" type='video/webm'>
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+            </div>
+
+            <h2 class="landing-title">A word from CEO</h2>
+
+            <div class="ceo-word clearfix">
+                <div class="ceo-photo"></div>
+                <div class="ceo-text">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clients">
+        <div class="container">
+            <ul class="clients-list clearfix">
+                <li class="clients-list-item"><a class="clients-link client1" href="#"></a></li>
+                <li class="clients-list-item"><a class="clients-link client2" href="#"></a></li>
+                <li class="clients-list-item"><a class="clients-link client3" href="#"></a></li>
+                <li class="clients-list-item"><a class="clients-link client4" href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+
     <div>
         asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
          asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
@@ -280,41 +341,46 @@
     </div>
 <script>
     $( document ).ready(function() {
-        setBarWidth(".dataVis1 span", ".dataVis1 em", "width", 100);
 
 //        $( "#basic-waypoint" ).bind("click",function() {
-//            setBarWidth(".dataVis1 span", ".dataVis1 em", "width", 100);
 //            $("em").css("animation-play-state","running");
-//
 //        });
 
-        $('#basic-waypoint').waypoint(function(){
-            $("em").css("animation-play-state","running");
+        var myPlayer = videojs("my-video");
+        $( ".ceo-city-btn" ).bind("click",function() {
+            var isShow=$('.ceo-city-video').attr('isShow');
+            if (isShow==1){
+                $('.ceo-city-video').hide();
+            }
+            if (myPlayer.paused()) {
+                myPlayer.play();
+            }
+            else {
+                myPlayer.pause();
+            }
         });
 
-//        var waypoint = new Waypoint({
-//            element: document.getElementById('basic-waypoint'),
-//            handler: function() {
-//                $("em").css("animation-play-state","running");
-//            }
-//        })
+        $('#basic-waypoint').waypoint(function(){
+            setBarWidth(".dataVis1 span", ".dataVis1 em", 100);
+        });
+
+        $('.vjs-big-play-button').remove();
+
+
 
     });
+</script>
 
-
-
-//
-//    $(function(){
-        //beginVis('directionsHeader',".dataVis1 span", ".dataVis1 em", "width", 100);
-
-//        $('#directionsHeader').onclick(function(){
-//            setBarWidth(".dataVis1 span", ".dataVis1 em", "width", 100);
-//        });
-
-//        $('#menu').slicknav();
-        //setBarWidth(".dataVis1 span", ".dataVis1 em", "width", 100);
-
-//    });
+<script>
+    var myPlayer = videojs("my-video");
+    togglePause = function(){
+        if (myPlayer.paused()) {
+            myPlayer.play();
+        }
+        else {
+            myPlayer.pause();
+        }
+    }
 </script>
 
 </body>

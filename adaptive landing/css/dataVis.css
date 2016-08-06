@@ -8,7 +8,8 @@
   width: 508px;
   padding-left: 78px;
   margin-right: 68px;
-  float: left; }
+  float: left;
+  font-size: 20px; }
   .dataVis1 li {
     position: relative;
     height: 50px;
@@ -24,14 +25,15 @@
       font-style: normal;
       border-bottom-color: #2ab99b;
       position: absolute;
-      top: 16px;
-      overflow: visible;
-      animation: grow-width 3s;
-      animation-play-state: paused; }
+      top: 20px;
+      overflow: visible; }
     .dataVis1 li span {
       text-align: right; }
     .dataVis1 li span:after {
       content: '%';
       display: inline-block; }
+
+.dataVis1 li span.numbers {
+  display: none; }
 
 /*# sourceMappingURL=dataVis.css.map */

@@ -41,6 +41,7 @@ ul,h2,h3{
   color: rgb(0, 0, 0);
   text-align: center;
   position: relative;
+  font-family: 'Raleway',sans-serif;
 }
 
 .landing-title:after{
@@ -340,11 +341,132 @@ ul,h2,h3{
 }
 
 .directions-categories{
-  margin-top: 72px;
+  margin-top: 68px;
 }
 
 .directions-text{
   float: left;
   width: 594px;
   line-height: 23px;
+}
+
+/*directions end*/
+
+/*ceo*/
+
+.city{
+//  height: 504px;
+//  background: url("../images/city.png") no-repeat;
+  margin-top: 34px;
+  margin-bottom: 47px;
+  position: relative;
+}
+
+.city-container{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  height: 504px;
+  width: 1250px;
+}
+
+.ceo-city-video{
+  width: 930px;
+  margin: 0 auto;
+  padding-top: 36px;
+  position: relative;
+  z-index: 2;
+}
+
+.ceo-city-text{
+  font-family: 'Garamond';
+  font-style: italic;
+  font-size: 49px;
+  color: #ffffff;
+}
+
+.ceo-city-btn{
+  width: 84px;
+  height: 84px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.ceo-city-icon{
+  background: url("../images/play.png") no-repeat;
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 27px;
+}
+
+.ceo-video-js{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+
+.ceo-word{
+  font-family: "Raleway",sans-serif;
+  padding-top: 20px;
+}
+
+.ceo-photo{
+  float:left;
+  background: url("../images/CEO.png") no-repeat;
+  width: 387px;
+  height: 331px;
+  margin-left: 60px;
+
+}
+.ceo-text{
+  float: right;
+  width: 570px;
+  font-size: 18px;
+  margin: 29px 60px 0 0;
+  line-height: 31px;
+}
+
+/*ceo end*/
+
+/*clients*/
+.clients-list{
+  padding: 0 60px;
+}
+
+.clients-list-item{
+  float: left;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+.clients-link{
+  display: block;
+  height: 100px;
+  width: 240px;
+  margin-right:72px;
+}
+
+.clients-list-item:nth-child(4) .clients-link{
+  margin-right: 0;
+}
+
+@for $i from 1 through 4 {
+  .client#{$i}{
+    $value:"../images/cl#{$i}.png";
+    background: url("#{$value}") no-repeat;
+  }
 }
