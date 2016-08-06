@@ -16,6 +16,7 @@
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/dataVis.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
 
     <link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
 
@@ -44,6 +45,9 @@
         </div>
     </div>
 </header>
+<a href="javascript:;" id="toTop">
+    <i id="toTop-cursor"></i>
+</a>
 <div class="welcome">
     <div class="container">
         <h2 class="landing-title">Welcome to Idealgap</h2>
@@ -265,7 +269,7 @@
         </div>
     </div>
 
-    <div class="clients">
+    <div id="second-waypoint" class="clients">
         <div class="container">
             <ul class="clients-list clearfix">
                 <li class="clients-list-item"><a class="clients-link client1" href="#"></a></li>
@@ -276,75 +280,132 @@
         </div>
     </div>
 
-    <div>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-         asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
-        asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        asd asd asd asd asd asd asd as asd qwd asdasd fwef wef kweoif asdasd fwef wef kweoif asdasd fwef wef kweoif
-        <br/>
+    <div class="statistic">
+        <div class="container">
+            <ul class="statistic-list clearfix">
+                <li class="statistic-list-item">
+                    <div class="statistic-numbers">2414</div>
+                    <div class="statistic-title">happy clients</div>
+                </li>
+                <li class="statistic-list-item">
+                    <div class="statistic-numbers">7485</div>
+                    <div class="statistic-title">pizza hut</div>
+                </li>
+                <li class="statistic-list-item">
+                    <div class="statistic-numbers">985</div>
+                    <div class="statistic-title">html files</div>
+                </li>
+                <li class="statistic-list-item">
+                    <div class="statistic-numbers">8574</div>
+                    <div class="statistic-title">lines of code</div>
+                </li>
+                <li class="statistic-list-item">
+                    <div class="statistic-numbers">412</div>
+                    <div class="statistic-title">psd files included</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="latest-blog">
+        <div class="container">
+            <h2 class="landing-title">Latest Blog</h2>
+            <ul class="blog-list">
+                <li class="blog-item">
+                    <a class="latest-blog-picture-link" href="#"></a>
+                    <a class="latest-blog-title" href="#">SEO Optimization</a>
+                    <div class="latest-blog-text">
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et et molestiae.
+                    </div>
+                </li>
+
+                <li class="blog-item">
+                    <a class="latest-blog-picture-link" href="#"></a>
+                    <a class="latest-blog-title" href="#">Design Optimization</a>
+                    <div class="latest-blog-text">
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et et molestiae.
+                    </div>
+                </li>
+
+                <li class="blog-item">
+                    <a class="latest-blog-picture-link" href="#"></a>
+                    <a class="latest-blog-title" href="#">Web content writers</a>
+                    <div class="latest-blog-text">
+                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et et molestiae.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="connected">
+    <div class="container">
+        <h2 class="landing-title">Stay connected</h2>
+        <div class="connected-text">
+            Follow us in social networks. You can also subscribe for our news.
+            <br>
+            We are going to provide you with actual and important for you information without spam or fluff.
+        </div>
+        <ul class="connected-list">
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+            <li class="connected-item"><a class="connected-link" href="#"></a></li>
+        </ul>
+
+        <div class="subscribe">
+            <form class="subscribe-form" action="#" method="post">
+                <input placeholder="Subscribe with email" class="subscribe-input" type="text"/>
+                <input class="subscribe-submit" type="submit" value=""/>
+            </form>
+        </div>
 
     </div>
+</div>
+        <div class="contactus">
+            <div class="container">
+                <h2 class="landing-title">Contact us</h2>
+                <div class="contacts clearfix">
+                    <div class="address">
+                        Idealgap Limited <br/>
+                        76 Wakefield Street, Auckland Central- New Zealand <br/>
+                        Phone: +64 21 032 8301 <br/>
+                        Email: Support@idealgap.com
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2245.2630054469755!2d37.61860095058624!3d55.753933299278074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470505401124" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="contactus-title">
+                    Drop us a note here! We will get in touch with you.
+                </div>
+                <div class="contact-form">
+                    <form class="clearfix" method="post" action="#">
+                        <div class="clearfix">
+                            <input placeholder="Name" class="contact-input contact-name" type="text"/>
+                            <input placeholder="Email" class="contact-input contact-email" type="text"/>
+                        </div>
+                        <textarea placeholder="Message" class="contact-input-text" name="" id="" cols="30" rows="10"></textarea>
+                        <input class="contact-submit" type="submit" value="Send"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container clearfix">
+        <div class="footer-text">
+            © 2016 IDEALGAP. All rights reserved.
+        </div>
+    </div>
+</div>
 <script>
     $( document ).ready(function() {
-
-//        $( "#basic-waypoint" ).bind("click",function() {
-//            $("em").css("animation-play-state","running");
-//        });
 
         var myPlayer = videojs("my-video");
         $( ".ceo-city-btn" ).bind("click",function() {
@@ -362,6 +423,12 @@
 
         $('#basic-waypoint').waypoint(function(){
             setBarWidth(".dataVis1 span", ".dataVis1 em", 100);
+        });
+        $('#second-waypoint').waypoint(function(){
+            $(".statistic-numbers").spincrement({
+                thousandSeparator: "",
+                duration: 1200
+            });
         });
 
         $('.vjs-big-play-button').remove();
@@ -382,6 +449,20 @@
         }
     }
 </script>
-
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()>200){
+                $('#toTop').css({display:'block'});
+            }else{
+                $('#toTop').css({display:'none'});
+            }
+        });
+        $('#toTop').click(function(){
+            $('html, body').animate({scrollTop:0},800);
+            return false;
+        });
+    });
+</script>
 </body>
 </html>
