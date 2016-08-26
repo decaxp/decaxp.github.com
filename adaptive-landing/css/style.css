@@ -9,8 +9,8 @@ font-family: 'Raleway', sans-serif;
 */
 /*general*/
 .container {
-  width: 1250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 html {
   line-height: 1.0; }
@@ -73,6 +73,18 @@ ul, h2, h3 {
 
 #toTop:hover i {
   opacity: 1; }
+
+/*slickNav menu*/
+.slicknav_menu {
+  display: none;
+  clear: both; }
+  .slicknav_menu .header-list-item {
+    float: right;
+    margin-right: 10px; }
+  .slicknav_menu a {
+    text-transform: uppercase;
+    color: #3a3a3c;
+    font-size: 13px; }
 
 /*header*/
 .header-top {
@@ -169,7 +181,9 @@ ul, h2, h3 {
 
 .welcome-work {
   margin-top: 55px;
-  padding: 0 85px; }
+  padding: 0 85px;
+  display: flex;
+  justify-content: center; }
 
 .welcome-work-item {
   float: left;
@@ -233,7 +247,7 @@ ul, h2, h3 {
   margin: 90px 0 0 56px; }
 
 .about-text {
-  width: 590px;
+  width: calc(100% - 622px);
   float: left;
   font-size: 16px;
   text-align: left;
@@ -270,7 +284,7 @@ ul, h2, h3 {
   list-style: none;
   float: left;
   width: 273px;
-  margin: 0 135px 22px 0; }
+  margin: 0 109px 22px 0; }
 
 .services-header {
   position: relative;
@@ -291,11 +305,11 @@ ul, h2, h3 {
   margin-top: 10px; }
 
 .services-text {
-  margin: 11px 0 0 -5px;
+  margin: 11px 0 0 0px;
   line-height: 23px; }
 
 .services-list-item:nth-child(3), .services-list-item:nth-child(6) {
-  margin: 0 0 22px 20px; }
+  margin: 0 0 22px 0; }
 
 .services-gadgets {
   background-image: url("../images/gadgets.png");
@@ -313,11 +327,13 @@ ul, h2, h3 {
   padding-top: 51px; }
 
 .directions-categories {
-  margin-top: 68px; }
+  margin-top: 68px;
+  float: left; }
 
 .directions-text {
   float: left;
-  width: 594px;
+  margin-top: 68px;
+  width: 525px;
   line-height: 23px; }
 
 /*directions end*/
@@ -334,7 +350,7 @@ ul, h2, h3 {
   display: flex;
   align-items: center;
   height: 504px;
-  width: 1250px; }
+  width: 1170px; }
 
 .ceo-city-video {
   width: 930px;
@@ -347,7 +363,8 @@ ul, h2, h3 {
   font-family: 'Garamond';
   font-style: italic;
   font-size: 49px;
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
 
 .ceo-city-btn {
   width: 84px;
@@ -374,7 +391,9 @@ ul, h2, h3 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  width: 1170px;
+  height: 470px; }
 
 .ceo-word {
   font-family: "Raleway",sans-serif;
@@ -435,7 +454,7 @@ ul, h2, h3 {
 /*statistic*/
 .statistic {
   background: #2ab99b;
-  padding: 65px 60px 60px 60px;
+  padding: 65px 0px 60px 0px;
   font-family: 'Raleway',sans-serif;
   color: #ffffff;
   text-align: center; }
@@ -639,7 +658,7 @@ ul, h2, h3 {
   margin: 35px 85px 0 90px; }
 
 .contact-input {
-  width: 480px;
+  width: 470px;
   height: 45px;
   border: 1px solid #2ab99b;
   padding-left: 20px; }

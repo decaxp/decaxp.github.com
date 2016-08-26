@@ -17,8 +17,9 @@ $backgroundColor:#2ab99b;
 $backgroundColor2:#f6f6f6;
 
 .container{
-  width:1250px;
+//  width:1250px;
   margin:0 auto;
+  overflow: hidden;
 }
 
 html {
@@ -86,6 +87,30 @@ ul,h2,h3{
   transition:all .3s ease;
 }
 #toTop:hover i{opacity:1}
+
+/*slickNav menu*/
+
+
+.slicknav_menu{
+//  background: #FFFFFF;
+  display: none;
+  clear: both;
+
+
+  .header-list-item{
+    float:right;
+    margin-right: 10px;
+  }
+
+  a{
+    text-transform: uppercase;
+    color: #3a3a3c;
+    font-size: 13px;
+  }
+
+
+}
+
 
 /*header*/
 .header-top{
@@ -197,6 +222,8 @@ ul,h2,h3{
 .welcome-work{
   margin-top: 55px;
   padding: 0 85px;
+  display: flex;
+  justify-content: center;
 }
 
 .welcome-work-item{
@@ -274,7 +301,7 @@ ul,h2,h3{
 }
 
 .about-text{
-  width: 590px;
+  width: calc(100% - 622px);
   float: left;
   font-size: 16px;
   text-align: left;
@@ -318,7 +345,8 @@ ul,h2,h3{
   list-style: none;
   float:left;
   width:273px;
-  margin: 0 135px 22px 0;
+//  margin: 0 135px 22px 0;
+  margin: 0 109px 22px 0;
 }
 
 .services-header{
@@ -343,12 +371,13 @@ ul,h2,h3{
 }
 
 .services-text{
-  margin: 11px 0 0 -5px;
+  margin: 11px 0 0 0px;
   line-height: 23px;
 }
 
 .services-list-item:nth-child(3),.services-list-item:nth-child(6){
-  margin: 0 0 22px 20px;
+//  margin: 0 0 22px 20px;
+  margin:0 0 22px 0;
 }
 
 .services-gadgets{
@@ -375,11 +404,15 @@ ul,h2,h3{
 
 .directions-categories{
   margin-top: 68px;
+  float:left;
+//  overflow: hidden;
 }
 
 .directions-text{
   float: left;
-  width: 594px;
+  margin-top: 68px;
+//  width: 594px;
+  width: 525px;
   line-height: 23px;
 }
 
@@ -402,7 +435,7 @@ ul,h2,h3{
   display: flex;
   align-items: center;
   height: 504px;
-  width: 1250px;
+  width: 1170px;
 }
 
 .ceo-city-video{
@@ -418,6 +451,7 @@ ul,h2,h3{
   font-style: italic;
   font-size: 49px;
   color: #ffffff;
+  text-align: center;
 }
 
 .ceo-city-btn{
@@ -448,6 +482,8 @@ ul,h2,h3{
   top:0;
   left:0;
   z-index: 1;
+  width:1170px;
+  height: 470px;
 }
 
 .ceo-word{
@@ -516,7 +552,8 @@ $map: ("1":87px,"2":57px,"3":69px,"4":87px);
 /*statistic*/
 .statistic{
   background: $backgroundColor;
-  padding: 65px 60px 60px 60px;
+//  padding: 65px 60px 60px 60px;
+  padding: 65px 0px 60px 0px;
   font-family: 'Raleway',sans-serif;
   color:#ffffff;
   text-align: center;
@@ -728,7 +765,8 @@ $map: ("1":87px,"2":57px,"3":69px,"4":87px);
 }
 
 .contact-input{
-  width:480px;
+//  width:480px;
+  width:470px;
   height:45px;
   border:1px solid $backgroundColor;
   padding-left: 20px;

@@ -6,13 +6,15 @@
     <meta author="Dolgov Dmitry"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
+
     <link rel="stylesheet" href="css/dataVis.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <link rel="stylesheet" href="css/slicknav.min.css" />
+
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/dataVis.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
@@ -27,7 +29,7 @@
 <body>
 <header>
     <div class="container">
-        <div class="header-top clearfix">
+        <div id="slickNav" class="header-top clearfix">
             <a class="header-logo" href="#">
                 IDEAL <span class="header-logo-span">Gap</span>
             </a>
@@ -196,7 +198,7 @@
     <div class="directions">
         <div class="container clearfix">
             <h2  id="basic-waypoint"  class="landing-title">What we do?</h2>
-            <div class="directions-categories">
+            <div class="directions-categories clearfix">
                 <ul class="dataVis1">
                     <li>
                         <div>graphic design</div>
@@ -247,7 +249,7 @@
                     </div>
                 </div>
 
-                <video id="my-video" class="video-js ceo-video-js" controls preload="auto" width="1250" height="504"
+                <video id="my-video" class="video-js ceo-video-js" controls preload="auto"
                        poster="images/city.png" data-setup="{}">
                     <source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.mp4" type='video/mp4'>
                     <source src="https://www.paypalobjects.com/webstatic/mktg/videos/PayPal_AustinSMB_baseline.webm" type='video/webm'>
@@ -258,7 +260,7 @@
                 </video>
             </div>
 
-            <h2 class="landing-title">A word from CEO</h2>
+            <h2 id="second-waypoint" class="landing-title">A word from CEO</h2>
 
             <div class="ceo-word clearfix">
                 <div class="ceo-photo"></div>
@@ -269,7 +271,7 @@
         </div>
     </div>
 
-    <div id="second-waypoint" class="clients">
+    <div  class="clients">
         <div class="container">
             <ul class="clients-list clearfix">
                 <li class="clients-list-item"><a class="clients-link client1" href="#"></a></li>
@@ -462,7 +464,21 @@
             $('html, body').animate({scrollTop:0},800);
             return false;
         });
+
+
     });
 </script>
+
+<script>
+    $(function(){
+        $('#menu').slicknav({
+            label: '',
+//            duration: 1000,
+//            easingOpen: "easeOutBounce", //available with jQuery UI
+            prependTo:'#slickNav'
+        });
+});
+</script>
+
 </body>
 </html>
