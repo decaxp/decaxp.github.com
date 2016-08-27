@@ -382,6 +382,7 @@ ul,h2,h3{
 
 .services-gadgets{
   background-image: url("../images/gadgets.png");
+  background-size: cover;
   width: 821px;
   height: 345px;
   margin:0 auto;
@@ -497,7 +498,7 @@ ul,h2,h3{
   width: 387px;
   height: 331px;
   margin-left: 60px;
-
+  background-size: contain;
 }
 .ceo-text{
   float: right;
