@@ -70,6 +70,9 @@
 }
 
 @media screen and (min-width:769px) and (max-width:992px){
+  #toTop{
+    right:30px;
+  }
 /* planshets */
   .container{
     width:750px;
@@ -352,10 +355,16 @@
       margin-bottom:10px;
     }
   }
+  #toTop{
+    right:30px;
+  }
 }
 
 @media screen and (min-width:320px) and (max-width:479px){
 /* vertical phones */
+  #toTop{
+    right:30px;
+  }
   .container{
     width:300px;
   }
@@ -658,5 +667,8 @@
   }
   .connected{
     padding-bottom: 0;
+  }
+  #toTop{
+    right:30px;
   }
 }
