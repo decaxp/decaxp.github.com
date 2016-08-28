@@ -4,6 +4,7 @@
   .container{
     width:1170px;
   }
+
 }
 
 @media screen and (min-width:993px) and (max-width:1199px){
@@ -23,7 +24,12 @@
   .header-list-item:last-child{
     margin-right: 30px;
   }
-
+  .welcome-work{
+    padding: 0;
+  }
+  .welcome-work-item{
+    width:250px;
+  }
   .about-tv{
     width: 592px;
   }
@@ -51,8 +57,8 @@
     width:calc(100% - 516px);
   }
   .ceo-video-js,.city-container{
-    width: 970px;
-    height: 391px;
+    width: 970px !important;
+    height: 391px !important;
   }
   .ceo-photo{
     margin-left: 0;
@@ -114,6 +120,12 @@
       color:#ffffff;
     }
   }
+  .welcome-work{
+    padding:0;
+  }
+  .welcome-work-item{
+    width:190px;
+  }
 
   .about-tv{
     width: 100%;
@@ -162,8 +174,8 @@
   }
 
   .ceo-video-js{
-    width:750px;
-    height: 300px;
+    width:750px !important;
+    height: 300px !important;
   }
 
   .ceo-photo{
@@ -177,6 +189,10 @@
 
   .statistic{
     margin-top:20px;
+  }
+
+  .latest-blog-text{
+    width:250px;
   }
 
   .subscribe-input{
@@ -240,7 +256,9 @@
       color:#ffffff;
     }
   }
-
+  .welcome{
+    margin-top: 0;
+  }
   .welcome-work{
     padding:0;
     flex-flow: row wrap;
@@ -294,8 +312,8 @@
   }
 
   .ceo-video-js{
-    width:460px;
-    height: 185px;
+    width:460px !important;
+    height: 185px !important;
   }
   .ceo-city-text{
     display: none;
@@ -315,6 +333,10 @@
   .statistic{
     margin-top:10px;
   }
+  .statistic-list-item {
+    width: 90px;
+  }
+
   .blog-list{
     flex-flow: row wrap;
     margin-top:45px;
@@ -632,9 +654,15 @@
   }
   .blog-item{
     margin-bottom:10px;
+    width:200px;
   }
   .latest-blog{
     margin-top:36px;
+  }
+  .latest-blog-picture-link{
+    width:220px !important;
+    background-size: contain !important;
+    height: auto;
   }
   .connected-item{
     margin: 5px 20px;

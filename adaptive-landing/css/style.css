@@ -393,8 +393,8 @@ ul, h2, h3 {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 1170px;
-  height: 470px; }
+  width: 1170px !important;
+  height: 471px !important; }
 
 .ceo-word {
   font-family: "Raleway",sans-serif;

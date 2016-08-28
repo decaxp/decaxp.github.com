@@ -410,7 +410,7 @@
     $( document ).ready(function() {
 
         var myPlayer = videojs("my-video");
-        $( ".ceo-city-btn" ).bind("click",function() {
+        $( ".ceo-city-btn,.vjs-poster" ).bind("click",function() {
             var isShow=$('.ceo-city-video').attr('isShow');
             if (isShow==1){
                 $('.ceo-city-video').hide();

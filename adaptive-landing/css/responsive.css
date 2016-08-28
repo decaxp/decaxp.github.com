@@ -15,6 +15,12 @@
   .header-list-item:last-child {
     margin-right: 30px; }
 
+  .welcome-work {
+    padding: 0; }
+
+  .welcome-work-item {
+    width: 250px; }
+
   .about-tv {
     width: 592px; }
 
@@ -39,8 +45,8 @@
     width: calc(100% - 516px); }
 
   .ceo-video-js, .city-container {
-    width: 970px;
-    height: 391px; }
+    width: 970px !important;
+    height: 391px !important; }
 
   .ceo-photo {
     margin-left: 0; }
@@ -92,6 +98,12 @@
     .slicknav_menu .header-list-link {
       color: #ffffff; }
 
+  .welcome-work {
+    padding: 0; }
+
+  .welcome-work-item {
+    width: 190px; }
+
   .about-tv {
     width: 100%;
     float: none; }
@@ -133,8 +145,8 @@
     padding-top: 0; }
 
   .ceo-video-js {
-    width: 750px;
-    height: 300px; }
+    width: 750px !important;
+    height: 300px !important; }
 
   .ceo-photo {
     float: none;
@@ -146,6 +158,9 @@
 
   .statistic {
     margin-top: 20px; }
+
+  .latest-blog-text {
+    width: 250px; }
 
   .subscribe-input {
     width: 675px; }
@@ -196,6 +211,9 @@
     display: block; }
     .slicknav_menu .header-list-link {
       color: #ffffff; }
+
+  .welcome {
+    margin-top: 0; }
 
   .welcome-work {
     padding: 0;
@@ -248,8 +266,8 @@
     padding-top: 0; }
 
   .ceo-video-js {
-    width: 460px;
-    height: 185px; }
+    width: 460px !important;
+    height: 185px !important; }
 
   .ceo-city-text {
     display: none; }
@@ -268,6 +286,9 @@
 
   .statistic {
     margin-top: 10px; }
+
+  .statistic-list-item {
+    width: 90px; }
 
   .blog-list {
     flex-flow: row wrap;
@@ -558,10 +579,16 @@
     margin-top: 45px; }
 
   .blog-item {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 200px; }
 
   .latest-blog {
     margin-top: 36px; }
+
+  .latest-blog-picture-link {
+    width: 220px !important;
+    background-size: contain !important;
+    height: auto; }
 
   .connected-item {
     margin: 5px 20px; }
