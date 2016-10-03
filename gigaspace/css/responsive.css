@@ -1,5 +1,242 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1080px; } }
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    width: 870px; }
+
+  .good-action-price {
+    width: calc(100% - 200px); }
+
+  .busket-info-img {
+    display: none; } }
+@media screen and (min-width: 769px) and (max-width: 993px) {
+  .container {
+    width: 720px; }
+
+  .header-menu-item {
+    margin: 0 10px 0 0; }
+
+  .login-username, .login-password {
+    width: 100px; }
+
+  .busket-info-img {
+    display: none; }
+
+  .good-action-img img {
+    width: 150px; }
+
+  .good-action-price {
+    width: calc(100% - 150px); } }
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  .container {
+    width: 440px; }
+
+  .login-busket {
+    display: block; }
+
+  .login-username, .login-password {
+    width: 100px; }
+
+  .busket-info {
+    margin-top: 10px; }
+
+  .busket-info-img {
+    display: none; }
+
+  .sidebar {
+    width: 100%; }
+
+  .goods {
+    width: 100%; }
+
+  .good-action-img img {
+    width: 300px; }
+
+  .good-action-img {
+    width: 300px;
+    float: none;
+    margin: 0 auto; }
+
+  .good-action-price {
+    width: 100%; }
+
+  .footer-copy-author {
+    float: left; }
+
+  .header-menu-list {
+    display: none; }
+
+  .slicknav_menu {
+    display: block; }
+
+  .footer-left, .footer-right {
+    width: 100%; }
+
+  .footer-right {
+    margin-top: 10px; }
+
+  .header-phone {
+    display: none; } }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 290px; }
+
+  .header-phone {
+    display: none; }
+
+  .header-menu-list {
+    display: none; }
+
+  .slicknav_menu {
+    display: block; }
+
+  .login-container {
+    display: block; }
+
+  .login-img {
+    display: none; }
+
+  .login-username, .login-password, .login-submit, .login-registration {
+    display: block;
+    width: 290px !important;
+    text-align: left; }
+
+  .login-busket {
+    display: block; }
+
+  .login-label {
+    display: none; }
+
+  .login-username, .login-password {
+    width: 100px; }
+
+  .busket-info {
+    margin-top: 10px; }
+
+  .busket-info-img {
+    display: none; }
+
+  .sidebar {
+    width: 100%; }
+
+  .goods {
+    width: 100%; }
+
+  .good-action-img img {
+    width: 200px; }
+
+  .good-action-img {
+    width: 200px;
+    float: none;
+    margin: 0 auto; }
+
+  .good-action-price {
+    width: 100%; }
+
+  .good-action-price-text-block {
+    background-image: none; }
+
+  .good-item {
+    width: 98%; }
+
+  .footer-copy-author {
+    float: left; }
+
+  .footer-left, .footer-right {
+    width: 100%; }
+
+  .footer-right {
+    margin-top: 10px; }
+
+  .footer-busket-item-title {
+    width: 180px;
+    display: inline-block; } }
+@media screen and (min-width: 270px) and (max-width: 320px) {
+  .container {
+    width: 250px; }
+
+  .header-phone {
+    display: none; }
+
+  .header-menu-list {
+    display: none; }
+
+  .slicknav_menu {
+    display: block; }
+
+  .login-container {
+    display: block; }
+
+  .login-img {
+    display: none; }
+
+  .login-username, .login-password, .login-submit, .login-registration {
+    display: block;
+    width: 290px !important;
+    text-align: left; }
+
+  .login-busket {
+    display: block; }
+
+  .login-label {
+    display: none; }
+
+  .login-username, .login-password {
+    width: 100px; }
+
+  .busket-info {
+    margin-top: 10px; }
+
+  .busket-info-img {
+    display: none; }
+
+  .sidebar {
+    width: 100%; }
+
+  .goods {
+    width: 100%; }
+
+  #goodActionTitle {
+    display: none; }
+
+  .good-action-img img {
+    width: 200px; }
+
+  .good-action-img {
+    width: 200px;
+    float: none;
+    margin: 0 auto; }
+
+  .good-action-price {
+    width: 100%; }
+
+  .good-action-price-block {
+    height: 20px; }
+
+  .good-action-price-text-block {
+    display: none; }
+
+  .good-action-price-img {
+    display: none; }
+
+  .good-action-price-img img {
+    width: 130px; }
+
+  .good-item {
+    width: 98%; }
+
+  .footer-copy-author {
+    float: left; }
+
+  .footer-left, .footer-right {
+    width: 100%; }
+
+  .footer-right {
+    margin-top: 10px; }
+
+  .footer-busket-item-title {
+    width: 140px;
+    display: inline-block; } }
 
 /*# sourceMappingURL=responsive.css.map */

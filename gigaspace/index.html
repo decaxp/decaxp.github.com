@@ -3,6 +3,7 @@
 <head>
     <title>GigaSpace Ecommerce Theme</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
 
@@ -57,8 +58,8 @@
         </div>
     </div>
     <div class="header-menu">
-        <div class="container">
-            <ul class="header-menu-list clearfix">
+        <div id="parentMobile" class="container">
+            <ul id="header-menu-list" class="header-menu-list clearfix">
                 <li class="header-menu-item">
                     <a class="header-menu-link" href="#">Home</a>
                 </li>
@@ -99,9 +100,8 @@
                             <input class="login-username" type="text" placeholder="Username"/>
                             <input class="login-password" type="text" placeholder="Password"/>
                             <input class="login-submit" type="submit" value="Login"/>
-                            <a class="login-registration" href="#">
-                                Registration
-                            </a>
+                            <input class="login-registration" type="button" value="Registration"/>
+
                         </div>
                     </form>
 
@@ -511,6 +511,7 @@
 </footer>
 <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script   src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.sidebar-input').change(function(){
@@ -554,6 +555,16 @@
             return false;
         });
      });
+</script>
+<script>
+    $(function(){
+        $('#header-menu-list').slicknav({
+            label: '',
+//            duration: 1000,
+//            easingOpen: "easeOutBounce", //available with jQuery UI
+            prependTo:'#parentMobile'
+        });
+    });
 </script>
 </body>
 </html>
