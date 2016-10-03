@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GigaSpace Ecommerce Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+
+    <script src="js/browser.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="container clearfix">
+            <div class="header-logo">
+                <a href="#" class="header-logo-icon"></a>
+                <div class="header-logo-title">
+                    <a href="#">
+                       <svg id="headerLogoTitle" width="170" height="45"
+                            version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+                           <defs>
+                               <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                                   <feGaussianBlur stdDeviation="2 2" result="shadow"></feGaussianBlur>
+                                   <feOffset dx="3" dy="3"></feOffset>
+                               </filter>
+                               <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                   <stop style="stop-color: #d2d2d2;" offset="0"></stop>
+                                   <stop style="stop-color: #dedede;" offset="0.49"></stop>
+                                   <stop style="stop-color: #f1f1f1;" offset="1"></stop>
+                               </linearGradient>
+                               <linearGradient id="grad2" class="logoGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                                   <stop style="stop-color: #ff7c00;" offset="0"></stop>
+                                   <stop style="stop-color: #ff8400;" offset="0.48"></stop>
+                                   <stop style="stop-color: #ffad41;" offset="0.51"></stop>
+                                   <stop style="stop-color: #ffc04f;" offset="1"></stop>
+                               </linearGradient>
+                           </defs>
+                           <text x="40" y="35">Giga</text>
+                           <text x="40" y="35">Giga</text>
+                           <text style="fill: url(#grad1);" x="40" y="35">Giga</text>
+
+                           <text class="header-logo-svg-text2" y="35">Space</text>
+                           <text class="header-logo-svg-text2" y="35">Space</text>
+                           <text style="fill: url(#grad2);" class="header-logo-svg-text2" y="35">Space</text>
+                       </svg>
+                    </a>
+                    <div class="header-logo-text backgroundTextColor">
+                        We provide the power for your computer system
+                    </div>
+                </div>
+            </div>
+            <div class="header-phone backgroundTextColor">
+                <div class="header-phone-text">Customer service: 555 865 1247 6</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="container">
+            <ul class="header-menu-list clearfix">
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">Home</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">Hardware</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link header-menu-link-selected" href="#">Software</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">Entertaiment</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">PC\Notebooks</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">Server\Network</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="main-block">
+    <div class="container">
+        <div class="login-busket clearfix">
+            <div class="login">
+
+                    <div class="login-label">
+                        if you wish to save your shopping card, you will need to log in:
+                    </div>
+                    <form class="login-form" method="post" action="#">
+                        <div class="login-container">
+
+                            <img class="login-img" src="img/smile.png" alt="#"/>
+                            <input class="login-username" type="text" placeholder="Username"/>
+                            <input class="login-password" type="text" placeholder="Password"/>
+                            <input class="login-submit" type="submit" value="Login"/>
+                            <a class="login-registration" href="#">
+                                Registration
+                            </a>
+                        </div>
+                    </form>
+
+            </div>
+            <div class="busket-info clearfix">
+                <div class="busket-info-img"></div>
+                <div class="busket-info-goods">
+                    <div class="busket-info-goods-count">
+                        There are currently 5 items in your basket!
+                    </div>
+                    <div class="busket-info-breadcrumbs">
+                        <ul class="busket-info-list clearfix">
+                            <li class="busket-info-list-item">
+                                <a class="busket-info-list-link" href="#">
+                                    View Busket
+                                </a>
+                            </li>
+                            <li class="busket-info-list-item">
+                                <a class="busket-info-list-link" href="#">
+                                    Save busket
+                                </a>
+                            </li>
+                            <li class="busket-info-list-item">
+                                <a class="busket-info-list-link" href="#">
+                                    Last item added: 1x Asus GTX456 GFX Card
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="window">
+    <div class="window-container container cleafix">
+
+            <aside class="sidebar">
+                <div class="sidebar-top">
+                    <div class="sidebar-title">
+                        <svg id="sidebarLogoTitle">
+                            <defs>
+                                <filter id="sidebarLogoShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="2 2" result="shadow"></feGaussianBlur>
+                                    <feOffset dx="3" dy="3"></feOffset>
+                                </filter>
+                                <linearGradient id="sidebarLogoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop style="stop-color: #ff7c00;" offset="0"></stop>
+                                    <stop style="stop-color: #ff8400;" offset="0.48"></stop>
+                                    <stop style="stop-color: #ffc04f;" offset="1"></stop>
+                                </linearGradient>
+                            </defs>
+                            <text x="0" y="10">Search an item</text>
+                            <text x="0" y="10">Search an item</text>
+                            <text style="fill:url(#sidebarLogoGrad);" x="0" y="10">Search an item</text>
+                        </svg>
+                    </div>
+                    <div class="sidebar-top-icon"></div>
+                </div>
+
+                <div class="sidebar-container">
+                    <form class="sidebar-form clearfix" action="#">
+                        <div class="sidebar-input-container">
+                            <select class="sidebar-input" id="sidebar-input" name="" placehoder="Brand">
+                                <option value="0" hidden selected="selected">Brand</option>
+                                <option value="1">Something</option>
+                                <option value="2">Something else</option>
+                                <option value="3">Another choice</option>
+                            </select>
+                            <div class="sidebar-input-button"></div>
+                        </div>
+                        <div class="sidebar-input-container">
+                            <select class="sidebar-input" name="" placeholder="Product">
+                                <option value="0" hidden selected="selected">Product</option>
+                                <option value="1">Something</option>
+                                <option value="2">Something else</option>
+                                <option value="3">Another choice</option>
+                            </select>
+                            <div class="sidebar-input-button"></div>
+                        </div>
+                        <input class="sidebar-search" value="Search" type="submit"/>
+                    </form>
+                </div>
+                <div class="menu-container">
+                    <ul class="menu-list-container">
+                        <li class="menu-list-container-item">
+                            <a class="menu-list-container-link" href="#">Hardsware Products</a>
+                            <ul class="menu-list">
+                                <li class="menu-item"><a class="menu-item-link" href="#">Beamers</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Computer casing</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">DVD\Blu-Ray</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Memory</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Processors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Monitors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Mouses</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Keyboard</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Videocards</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Audiocards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-list-container">
+                        <li class="menu-list-container-item">
+                            <a class="menu-list-container-link" href="#">Entertaiment Products</a>
+                            <ul class="menu-list hide">
+                                <li class="menu-item"><a class="menu-item-link" href="#">Beamers</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Computer casing</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">DVD\Blu-Ray</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Memory</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Processors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Monitors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Mouses</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Keyboard</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Videocards</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Audiocards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-list-container">
+                        <li class="menu-list-container-item">
+                            <a class="menu-list-container-link" href="#">PC\Notebooks</a>
+                            <ul class="menu-list hide">
+                                <li class="menu-item"><a class="menu-item-link" href="#">Beamers</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Computer casing</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">DVD\Blu-Ray</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Memory</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Processors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Monitors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Mouses</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Keyboard</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Videocards</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Audiocards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-list-container">
+                        <li class="menu-list-container-item">
+                            <a class="menu-list-container-link" href="#">Server\Networking</a>
+                            <ul class="menu-list hide">
+                                <li class="menu-item"><a class="menu-item-link" href="#">Beamers</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Computer casing</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">DVD\Blu-Ray</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Memory</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Processors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Monitors</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Mouses</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Keyboard</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Videocards</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="#">Audiocards</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+            <div class="goods">
+                <div class="good-action">
+                    <div class="good-action-title">
+                        <svg id="goodActionTitle">
+                            <defs>
+                                <filter id="goodActionShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="2 2" result="shadow"></feGaussianBlur>
+                                    <feOffset dx="3" dy="3"></feOffset>
+                                </filter>
+                                <linearGradient id="goodActionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop style="stop-color: #ff7c00;" offset="0"></stop>
+                                    <stop style="stop-color: #ff8400;" offset="0.48"></stop>
+                                    <stop style="stop-color: #ffc04f;" offset="1"></stop>
+                                </linearGradient>
+                            </defs>
+                            <text x="0" y="25">ASUS G51J GAMING LAPTOP</text>
+                            <text x="0" y="25">ASUS G51J GAMING LAPTOP</text>
+                            <text style="fill:url(#goodActionGrad);" x="0" y="25">ASUS G51J GAMING LAPTOP</text>
+                        </svg>
+                    </div>
+                    <div class="good-action-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui libero, ornare et fermentum a, congue eu
+                        nibh. Suspendisse commodo enim vel mi scelerisque viverra. Vestibulum a lectus a eros varius congue pulvinar
+                        id lacus. Duis rutrum justo sed massa varius tincidunt.
+                    </div>
+                    <div class="good-action-container clearfix">
+                        <div class="good-action-img">
+                            <img src="img/notebook.png" alt="#"/>
+                        </div>
+                        <div class="good-action-price clearfix">
+                            <div class="good-action-price-block clearfix">
+
+                                <div class="good-action-price-img">
+
+
+                                    <svg id="priceTitle" width="100" height="60">
+                                        <defs>
+                                            <filter id="priceShadow" class="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                                <feGaussianBlur stdDeviation="2 2" result="shadow"></feGaussianBlur>
+                                                <feOffset dx="3" dy="3"></feOffset>
+                                            </filter>
+                                            <linearGradient id="priceGrad" class="logoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop style="stop-color: #ff7c00;" offset="0"></stop>
+                                                <stop style="stop-color: #ff8400;" offset="0.48"></stop>
+                                                <stop style="stop-color: #ffc04f;" offset="1"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <text x="10" y="60" transform="rotate(340 20,40)">&euro; 1099,-</text>
+                                        <text x="10" y="60" transform="rotate(340 20,40)">&euro; 1099,-</text>
+                                        <text style="fill:url(#priceGrad)" x="10" y="60" transform="rotate(340 20,40)">&euro; 1099,-</text>
+
+                                    </svg>
+                                </div>
+
+
+
+                                <div class="good-action-price-text-block">
+                                    <div class="good-action-price-text">
+                                        Comes with free sleeve and
+                                        Logitech Wireless Mouse!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="good-action-price-add">
+                                Add to cart
+                            </a>
+                            <a href="#" class="good-action-price-view">
+                                View product
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <ul class="good-list clearfix">
+                    <li class="good-item">
+                        <div class="good-item-title">Apple iPod Nano</div>
+                        <div class="good-item-img">
+                            <img src="img/ipod.png" alt=""/>
+                        </div>
+                        <div class="good-item-infoblock">
+                            <div class="good-item-info clearfix">
+                                <div class="good-item-title-more">Apple iPod Nano 8GB</div>
+                                <div class="good-item-price">&euro; 159,-</div>
+                            </div>
+                            <div class="good-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla dignissim vehicula ante a elementum.
+                            </div>
+                            <div class="good-item-buttons clearfix">
+                                <div class="good-item-button">
+                                    <a class="good-item-add" href="#">Add to card</a>
+                                </div>
+                                <div class="good-item-button">
+                                    <a class="good-item-preview" href="#">View product</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="good-item">
+                        <div class="good-item-title">Apple iPod Nano</div>
+                        <div class="good-item-img">
+                            <img src="img/ipod.png" alt=""/>
+                        </div>
+                        <div class="good-item-infoblock">
+                            <div class="good-item-info clearfix">
+                                <div class="good-item-title-more">Apple iPod Nano 8GB</div>
+                                <div class="good-item-price">&euro; 159,-</div>
+                            </div>
+                            <div class="good-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla dignissim vehicula ante a elementum.
+                            </div>
+                            <div class="good-item-buttons clearfix">
+                                <div class="good-item-button">
+                                    <a class="good-item-add" href="#">Add to card</a>
+                                </div>
+                                <div class="good-item-button">
+                                    <a class="good-item-preview" href="#">View product</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="good-item">
+                        <div class="good-item-title">Apple iPod Nano</div>
+                        <div class="good-item-img">
+                            <img src="img/ipod.png" alt=""/>
+                        </div>
+                        <div class="good-item-infoblock">
+                            <div class="good-item-info clearfix">
+                                <div class="good-item-title-more">Apple iPod Nano 8GB</div>
+                                <div class="good-item-price">&euro; 159,-</div>
+                            </div>
+                            <div class="good-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla dignissim vehicula ante a elementum.
+                            </div>
+                            <div class="good-item-buttons clearfix">
+                                <div class="good-item-button">
+                                    <a class="good-item-add" href="#">Add to card</a>
+                                </div>
+                                <div class="good-item-button">
+                                    <a class="good-item-preview" href="#">View product</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="good-item">
+                        <div class="good-item-title">Apple iPod Nano</div>
+                        <div class="good-item-img">
+                            <img src="img/ipod.png" alt=""/>
+                        </div>
+                        <div class="good-item-infoblock">
+                            <div class="good-item-info clearfix">
+                                <div class="good-item-title-more">Apple iPod Nano 8GB</div>
+                                <div class="good-item-price">&euro; 159,-</div>
+                            </div>
+                            <div class="good-item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla dignissim vehicula ante a elementum.
+                            </div>
+                            <div class="good-item-buttons clearfix">
+                                <div class="good-item-button">
+                                    <a class="good-item-add" href="#">Add to card</a>
+                                </div>
+                                <div class="good-item-button">
+                                    <a class="good-item-preview" href="#">View product</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="clearfix container footer-container">
+        <div class="footer-left">
+            <div class="footer-left-quicklinks">
+                <div class="float-left-title">Quicklinks</div>
+                <ul class="quicklinks-list">
+                    <li class="quicklinks-item"><a class="quicklinks-link" href="#">Hardware products</a></li>
+                    <li class="quicklinks-item"><a class="quicklinks-link" href="#">Software products</a></li>
+                    <li class="quicklinks-item"><a class="quicklinks-link" href="#">Notebooks</a></li>
+                    <li class="quicklinks-item"><a class="quicklinks-link" href="#">Server</a></li>
+                    <li class="quicklinks-item"><a class="quicklinks-link" href="#">Entertaiment</a></li>
+                </ul>
+            </div>
+            <div class="footer-left-hotproducts">
+                <div class="hotproducts-border">
+                    <div class="float-left-title">Hot products</div>
+                    <ul class="quicklinks-list">
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Hardware products</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Software products</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Notebooks</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Server</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Server</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Server</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Server</a></li>
+                        <li class="quicklinks-item"><a class="quicklinks-link" href="#">Entertaiment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-busket">
+                <div class="footer-busket-title">Latest products added to your basket</div>
+                <ul class="footer-busket-list">
+                    <li class="footer-busket-item clearfix">
+                        <a class="footer-busket-link clearfix" href="#">
+                            <span class="footer-busket-item-title">
+                                Asus ENGTX460 DirectCU TOP/2DI/1024MD5
+                            </span>
+                            <span class="footer-busket-price">
+                                &euro; 279,-
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-busket-item clearfix">
+                        <a class="footer-busket-link clearfix" href="#">
+                            <span class="footer-busket-item-title">
+                                Asus ENGTX460 DirectCU TOP/2DI/1024MD5
+                            </span>
+                            <span class="footer-busket-price">
+                                &euro; 279,-
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-busket-item clearfix">
+                        <a class="footer-busket-link clearfix" href="#">
+                            <span class="footer-busket-item-title">
+                                Asus ENGTX460 DirectCU TOP/2DI/1024MD5
+                            </span>
+                            <span class="footer-busket-price">
+                                &euro; 279,-
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyrights container clearfix">
+        <div class="footer-copy">Copyright 2010 GigaSpace Solutions. All rights reserved.</div>
+        <div class="footer-copy-author">Design & Development by gerbengeeraerts.</div>
+    </div>
+</footer>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script   src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidebar-input').change(function(){
+            $(this).css({"color":"#000000"});
+        });
+
+        $('.sidebar-input-button').bind('click',function(){
+            var target = $("#sidebar-input"),clone = target.clone().removeAttr('id');
+            clone.val(target.val()).css({
+                overflow: "visible",
+                position: 'absolute',
+                left:0,
+                height:'auto',
+                'padding':0,
+                'z-index': 999,
+                width: target.outerWidth()
+            }).attr('size', clone.find('option').length > 10 ? 10 : clone.find('option').length-1).change(function() {
+                target.val(clone.val());
+            }).on('click blur',function() {
+                $(this).remove();
+            });
+            clone.children('option').css({'background':'#FFFFFF'});
+            $(this).parent().append(clone);
+            clone.focus();
+        });
+
+        $('.menu-list-container-link').bind('click',function(){
+            var $submenu=$(this).parent().children('.menu-list');
+
+            if ($submenu.hasClass('hide')) {
+                $submenu.removeClass('hide');
+                setTimeout(function () {
+                    $submenu.removeClass('novisible');
+                }, 20);
+            } else{
+                $submenu.addClass('novisible');
+                $submenu.one('transitionend', function(e) {
+                    $submenu.addClass('hide');
+                });
+            }
+            return false;
+        });
+     });
+</script>
+</body>
+</html>
